@@ -1,0 +1,14 @@
+[project]
+name = "kaggle5daysofai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "google-adk[a2a,eval]>=1.25.0",
+    "jupyter>=1.0.0",
+    "litellm>=1.81.13",
+    "serpapi>=0.1.5",
+    "sqlalchemy[asyncio]>=2.0.0",
+]

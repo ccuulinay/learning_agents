@@ -1,0 +1,2 @@
+from .agent import enhanced_currency_agent
+root_agent = enhanced_currency_agent

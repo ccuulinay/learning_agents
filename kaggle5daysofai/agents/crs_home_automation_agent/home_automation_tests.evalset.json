@@ -1,0 +1,123 @@
+{
+  "eval_set_id": "home_automation_tests",
+  "name": "home_automation_tests",
+  "eval_cases": [
+    {
+      "eval_id": "basic_device_control",
+      "conversation": [
+        {
+          "invocation_id": "e-6ab4fb2a-a225-4628-9d04-878f4052c967",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Turn on the desk lamp in the office "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "I'd be happy to help you turn on the desk lamp in the office! However, I need to know the specific device ID for your desk lamp to control it. Could you please tell me the device ID or name of your desk lamp in the office?\n\nFor example, it might be something like \"desk_lamp\", \"office_lamp\", \"lamp_1\", or another identifier you've set up in your smart home system. Once you provide that information, I can turn it on for you right away."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1771741542.93127
+        },
+        {
+          "invocation_id": "e-08cbac79-deae-434b-b020-5539cdaee821",
+          "user_content": {
+            "parts": [
+              {
+                "text": "the only one in the office"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "I understand there's only one lamp in the office, but I still need a specific device identifier to control it through the smart home system. The device ID is typically set up when you first configure the smart device in your home automation system.\n\nCould you check what the device is called in your smart home app or system? Common names might be:\n- \"office_lamp\"\n- \"desk_lamp\" \n- \"office_light\"\n- \"lamp\"\n- Or perhaps it's part of a group like \"office_lights\"\n\nIf you're not sure, you might want to check your smart home app to see what name was assigned to the desk lamp when it was set up. Once you provide that device ID, I'll be able to turn it on for you immediately."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1771741616.074089
+        },
+        {
+          "invocation_id": "e-af59d8f0-bae2-4a46-86c0-75698e0810e7",
+          "user_content": {
+            "parts": [
+              {
+                "text": "The office_lamp"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Great! I've successfully turned on the office lamp. The desk lamp in your office is now on and ready for use. Is there anything else you'd like me to help you with in your smart home?"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "home_automation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "Perfect! Now I can turn on the office lamp for you."
+                    },
+                    {
+                      "function_call": {
+                        "id": "call_00_e8Xd72r4tfxrJnJxzhevyQ8U",
+                        "args": {
+                          "location": "office",
+                          "device_id": "office_lamp",
+                          "status": "ON"
+                        },
+                        "name": "set_device_status"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "home_automation_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_00_e8Xd72r4tfxrJnJxzhevyQ8U",
+                        "name": "set_device_status",
+                        "response": {
+                          "success": true,
+                          "message": "Successfully set the office_lamp in office to on."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1771741629.186679
+        }
+      ],
+      "session_input": {
+        "app_name": "crs_home_automation_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1771741668.295711
+    }
+  ],
+  "creation_timestamp": 1771741652.82987
+}
