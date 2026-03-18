@@ -1,3 +1,10 @@
+# Learning materials
+https://www.kaggle.com/kaggle5daysofai/code
+
+# Related github
+https://github.com/ccuulinay/fork__25-Day-Agents-Course-by-Google
+
+
 # Create adk agent
 ```bash
 adk create my_agent
