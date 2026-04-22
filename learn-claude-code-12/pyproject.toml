@@ -9,5 +9,6 @@ dependencies = [
     "google-adk[a2a,eval]>=1.27.2",
     "jupyter>=1.0.0",
     "litellm>=1.82.4",
+    "openai>=2.32.0",
     "python-dotenv>=1.2.2",
 ]

@@ -1,36 +1,17 @@
+"""A simple Hello World module.
+
+This module provides a function to print a greeting message.
 """
-Hello module - A simple greeting utility.
-
-This module provides a function to greet users by name.
-"""
 
 
-def hello(name: str) -> str:
-    """
-    Greet someone by name.
+def greet(name: str = "World") -> None:
+    """Print a greeting message.
 
     Args:
-        name: The name of the person to greet.
-
-    Returns:
-        A greeting message addressed to the provided name.
-
-    Example:
-        >>> hello("Alice")
-        'Hello, Alice!'
+        name: The name to include in the greeting. Defaults to "World".
     """
-    return f"Hello, {name}!"
-
-
-def main() -> None:
-    """
-    Main entry point for the script.
-
-    Demonstrates example usage of the hello function.
-    """
-    # Example usage
-    print(hello("World"))
+    print(f"Hello, {name}!")
 
 
 if __name__ == "__main__":
-    main()
+    greet()
